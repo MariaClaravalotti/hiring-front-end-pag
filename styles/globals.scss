@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+
+}
+
+
+header{
+  background-color: rgb(99, 99, 241);
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  color:antiquewhite;
+  align-items: center;
+  img{
+    width: 18vw;
+    height: 22vh;
+    border-radius: 16px;
+  }
+}
+.gpsM{
+  width: 5vw;
+  height: 10vh;
+}
+.pags{
+  color: rgb(15, 15, 122);
+  font-weight: 900;
+  height: 10vh;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    list-style: none;
+    font-size: 900;
+  }
+  li{
+    a:hover{
+      color: rgb(94, 31, 31);
+      
+      }
+      a{
+           text-decoration: none;
+      }
+  }
+}
+
+.slide{
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+}
+.hb20{
+  width: 35%;
+  height: auto;
+}
+
+h1{
+  text-align: center;
+  
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem px;
+  margin: 0 auto;
+  width: 500px;
+  height: 70vh;
+}
+input, select, textarea{
+  width: 100%;
+  padding: 10px;
+  border:1px solid blue;
+  border-radius: 5px;
+  font-size:1.1rem;
+}
+.botão{
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: 
+  #333;
+  height: 5ph;
+  cursor: pointer;
+}
+.seçao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -77,12 +77,15 @@ input, select, textarea{
   margin-top: 1rem;
   padding: 10px;
   background-color: 
-  #333;
+  rgb(121, 121, 173);
   height: 5ph;
   cursor: pointer;
 }
-.seçao{
+.seçao {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.fig{
+  font-size: 1.5rem;
 }

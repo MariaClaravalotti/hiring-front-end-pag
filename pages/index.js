@@ -8,8 +8,7 @@ import 'swiper/css/scrollbar';
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import {useState, useEffect} from "react"
-
-
+import axios from "axios"
 
 export default function Home() {
 
@@ -19,8 +18,6 @@ export default function Home() {
     {id:"3",img:"corolla.png"}
 ]
 
-
- 
   return (
     <>
       <Head>
@@ -53,7 +50,8 @@ export default function Home() {
                 </nav>
 
                 <div class="swiper">
-                    <Swiper 
+                    <Swiper
+
                        slidesPerView={1}
                        pagination={{ clickable: true }}
                        navigation
@@ -65,12 +63,18 @@ export default function Home() {
                  </SwiperSlide>
 
 ))}
-            
                     </Swiper>
 
                 </div>
-                
-            </main>
-        </>
-    );
-}
+  
+          
+  </main>
+
+  </>
+  );
+  
+};
+
+
+
+  

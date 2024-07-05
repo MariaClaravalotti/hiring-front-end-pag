@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+#Car
+## Locar valotti
 
 First, run the development server:
 
@@ -42,37 +42,34 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 =======
 
 ## Objetivo
-Construir uma aplicação web em NextJS que tenha o comportamento de uma locadora de carros, contendo a página Home, Favoritos, Single page do carro e formulário de reserva com o carro escolhido.
+Este projeto é para uma locadora de carros de luxo com finalidade de ir a  eventos luxosos com carros de alto padrão. com aplicação em Next.js sass
 
-## Como começar
-Dar um fork no projeto, clonar o repositório em sua máquina local e criar um branch novo para o seu código.
-
-
-## Regras de negócio
-•	Ao acessar a home, trazer a listagem de carros, no estilo carrosel, separadas por pelo menos 3 categorias de marcas (ex: audi, toyota, bmw).
-
-•	Na listagem do carro, deverá ter uma opção para adicionar aos favoritos e um botão para saber mais (Single Page).
-
-•	Na Single Page, deverá conter as informações do carro escolhido, opção para favoritar e botão para reservar (Formulário de reserva).
-
-•	Na página de formulário de reserva, deverá conter as informações do carro escolhido e um formulário com dados básicos de contato (Não precisa enviar o e-mail).
-
-•	O formulário deverá ter suas devidas mascaras de input (telefone, cpf, data de nascimento).
-
-•	O formulário deverá ter suas devidas validações (não pode enviar vazio, telefone com 11 dígitos, cpf com 11 dígitos, data de nascimento com 10 dígitos).
-
-•	Ao acessar a página de favoritos, deverá listar os carros favoritados e ter a opção de remover dos favoritos.
+## Instalaçoes
+git clone https:/https://github.com/EstudioVnW/hiring-front-end-pag
+cd repositorio
+npx create-next-app@latest
+npm install
+npm install -g sass
+git checkout -b master 
 
 
-## Referências
-•	API de carros: https://api-ninjas.com/api/cars
+## Como usar
+iniciar o projeto com npm run dev
 
+## contribuiçao 
+1. Faça um fork do projeto
+2. Crie um branch: `git checkout -b nome-do-branch`
+3. Faça suas alterações e confirme: `git commit -m 'Descrição das alterações'`
+4. Envie para o branch original: `git push origin nome-do-branch`
+5. Crie uma solicitação de pull
+## Contato
+Para dúvidas, entre em contato pelo email: [valottimaria@gmail.com)
 
-## Observações
-1. Não é necessário se preocupar com CORS ou implementar um backend para fazer as requisições. A API de carros permite chamadas diretas do navegador.
-
-2. Design de livre escolha.
-
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo [https://github.com/MariaClaravalotti/hiring-front-end-pag/blob/master/LICENSE) para mais detalhes.
+## Sobre o projeto
+https://hiring-front-end-pag.vercel.app/
+Iniciei o projeto com o basico de next essa projeto é uma locadora de carros de luxo com intuito de antigir o puplico alvo de classe media-alta.
 
 ## Requisitos Técnicos para a entrega do teste
 

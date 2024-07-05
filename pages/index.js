@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import {register} from 'swiper/element/bundle'
+import { register } from 'swiper/element/bundle'
 register();
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -7,16 +7,29 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react"
 import axios from "axios"
 
 export default function Home() {
 
   const carros = [
-    {id: "1", img:"civic.png"},
-    {id:"2", img:"hb20.png"},
-    {id:"3",img:"corolla.png"}
-]
+    { id: "1", img: "civic.png" },
+    { id: "2", img: "hb20.png" },
+    { id: "3", img: "corolla.png" },
+
+
+  ]
+  const cars = [
+    { id: "5", img: "bmw3.png" },
+    { id: "6", img: "bmw2.jpg" },
+    { id: "7", img: "bmww.jpg" }
+  ]
+  const car = [
+    { id: "8", img: "mobi.jpg" },
+    { id: "9", img: "hb20.png" },
+    { id: "hb2", img: "hb2.jpg" }
+  ]
+
 
   return (
     <>
@@ -26,55 +39,94 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheets" href="./css/style.css/" />
-      
+
       </Head>
-      
+
       <header>
-                <section >
-                    <img src="logocar.png" />
+        <section >
+          <img src="logocar.png" />
 
-                </section>
-                <section>
-                    <img className="gpsM" src="gps2.png" />
-                    <img className="gpsM" src="linkedin.png" />
-                </section>
-            </header>
-            <main>
-
-                <nav class="pags">
-                    <ul>
-                        <li > <a href="home">HOME</a></li>
-                        <li ><a href="favoritos">FAVORITOS</a></li>
-                        <li  ><a href="reservar">RESERVADOS</a></li>
-                    </ul>
-                </nav>
-
-                <div class="swiper">
-                    <Swiper
-
-                       slidesPerView={1}
-                       pagination={{ clickable: true }}
-                       navigation
-                       >
-                    {carros.map( (item) => (
-
-                 <SwiperSlide key={item.id}>
-                   <img  className="slide" src={item.img} alt=""/>
-                 </SwiperSlide>
-
-))}
-                    </Swiper>
-
-                </div>
-  
-          
-  </main>
-
-  </>
-  );
-  
-};
+        </section>
+        <section>
+          <img className="gpsM" src="gps2.png" />
+          <img className="gpsM" src="linkedin.png" />
+          <h3>Carros de Luxo só na LoCar</h3>
+        </section>
+      </header>
 
 
+      <nav class="pags">
+        <ul>
+          <li > <a href="home">HOME</a></li>
+          <li ><a href="favoritos">FAVORITOS</a></li>
+          <li  ><a href="reservar">RESERVADOS</a></li>
+        </ul>
+      </nav>
 
-  
+      <div class="swiper">
+        
+        <Swiper
+
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          <h2>HONDA</h2>
+          {carros.map((item) => (
+
+            <SwiperSlide key={item.id}>
+              <img className="slide" src={item.img} alt="" />
+            </SwiperSlide>
+
+          ))}
+        </Swiper>
+
+      </div>
+
+      <div class="swiper">
+        <h2>BMW</h2>
+        <Swiper
+
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          {cars.map((item) => (
+
+            <SwiperSlide key={item.id}>
+              <img className="slide" src={item.img} alt="" />
+            </SwiperSlide>
+
+          ))}
+        </Swiper>
+
+      </div>
+      
+      <div class="swiper">
+        <h2>POPULARES</h2>
+        <Swiper
+
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          {car.map((item) => (
+
+            <SwiperSlide key={item.id}>
+              <img className="slide" src={item.img} alt="" />
+            </SwiperSlide>
+
+          ))}
+        </Swiper>
+
+      </div>
+
+
+
+    </>
+  )
+}
+
+
+
+
